@@ -1,0 +1,693 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* /////////////////////////////////////////    home+header    ///////////////////////////////////////*/
+.home{
+     background-image: url(../images/carousel-1.jpg); 
+    height: 100vh;
+    background-size: cover;
+     position: relative; 
+}
+.navbar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    position: fixed;
+    z-index: 2;
+}
+.navbar-title{
+    float: left;
+    font-weight: bold;
+    padding: 1%  1%;
+    color: whitesmoke;
+}
+.navbar-content{
+    float: left;
+    padding: 1% 20%;
+}
+.navbar-pages{
+    display: inline-block;
+     padding-left: 40px; 
+}
+  .navbar-btn{
+       float: right;  
+       margin-top: -55px; 
+       padding: .8%  3%; 
+       margin-right:20px;
+       border-radius: 10px ;
+       font-size: 18px;
+       cursor: pointer;
+       border: none;
+       background-color: rgb(9, 44, 245);
+       color: whitesmoke;
+      }  
+.home-text{
+    font-size: 25px;
+}
+.home-title{
+    font-size: 55px;
+}
+.home-btn{
+    padding: 18px 60px;
+    margin-left: 20px;
+     font-size: 20px; 
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+.Join{
+  background-color: rgb(9, 44, 245);
+  color: whitesmoke;
+}
+
+.home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+.home-content {
+    width:60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%  , -50%  );
+    text-align: center;
+    color: whitesmoke;
+}
+.navbar-pages a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.navbar-pages a:after{
+    content: "";
+    width: 0px; 
+    height: 4px;
+     display: block;    
+    transition: .7s;
+    margin-top: 5px;
+}
+.navbar-pages a:hover::after{
+    width: 100%;
+    background-color: rgb(9, 44, 245);
+  }
+.navbar-pages a:hover{
+  color: rgb(9, 44, 245);
+}
+.Join:hover , .navbar-btn:hover {
+    opacity: .8;
+    color: whitesmoke;
+}
+.contact:hover {
+  opacity: .8;
+
+}
+/* ///////////////////////////////////////////////// welcome page /////////////////////////////////////////////////////// */
+.wel-page {
+    height: 100vh;
+      background-color: rgb(230, 230, 230);
+      position: relative;
+  }
+  .wel-header{
+    text-align: center;
+  }
+  .wel-title {
+    font-size: 40px;
+    padding-top: 120px;
+  }
+   .wel-headerline{
+    margin: auto;
+    height: 3px;
+    width: 60px;
+    background-color: rgb(12, 78, 99);
+    margin-top: 20px;
+  } 
+  .wel-container{
+      width: 90%;
+        margin-top: 120px; 
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%  , -50%  );  
+  }
+  .wel-content {
+    overflow: auto;
+
+  }
+   .wel-item{
+     height: 230px;
+    width: 29%;
+    border: .5px solid gray;
+    float: left; 
+    border-radius: 10px;
+    background-color: rgb(223, 215, 215); 
+    text-align: center;
+      padding: 15px 10px;  
+    position: relative;
+  }
+  .wel-item-middle{
+     margin: 0  3.2%; 
+  }
+  
+  .wel-img {
+    width: 50%; 
+   margin: auto;
+   margin-top: 10px ;
+   font-size: 50px;
+   color: rgb(4, 6, 124);
+   transition: .6s;
+  }
+  .wel-text {
+    padding-top: 30px ;
+    text-align: center;
+  }
+  .wel-text p{
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  .wel-text a{
+    text-decoration: none;
+    color: rgb(11, 64, 133);
+    font-size: 20px;
+    transition: .3s;
+  }
+  .wel-text a i{
+    font-size: 14px;
+  }
+  
+  .wel-item:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right top, rgb(8, 37, 70),rgba(2, 0, 145, 0.582)); 
+    z-index: -2;    
+  }
+  .wel-item:hover::after{
+  height: 100%;
+  width: 100%;
+   transition: .6s; 
+  } 
+   .wel-item:hover  ,  .wel-item:hover .wel-img ,.wel-item:hover .wel-text a{
+    color: white; 
+   z-index: 3;   
+  } 
+  /* ///////////////////////////////////////////// classes ///////////////////////////////////////////////////////// */
+  .class{
+    background-color: rgb(209, 209, 209);
+    position: relative;
+  }
+  .class-header{
+    text-align: center;
+    margin: auto;
+  }
+.class-headerline{
+  margin: auto;
+  height: 3px;
+  width: 60px;
+  background-color: rgb(12, 78, 99);
+  margin-top: 10px;
+
+}
+.class-title{
+  font-size: 40px;
+  padding-top: 100px; 
+
+}
+.class-container{
+  width: 80%;
+  margin: auto;
+}
+.class-content{
+  overflow: auto;
+  margin-top: 15px;
+}
+.class-item{
+  height: 260px;
+  width: 20%;
+  float: left; 
+  text-align: center;
+   transition: .6s;  
+  position: relative;
+  margin: 1%  0;
+  padding: 15px  15px;
+}
+.middle{
+  margin: 1%  15%;
+}
+.class-img img{
+  width: 100%;  
+}
+
+
+.class-item .class-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+    visibility: hidden;  
+  transition: .6s;
+}
+ .class-item:hover .class-overlay{
+  opacity:1;
+  visibility: visible;
+} 
+.class-overlay-content{
+  position: absolute;
+   left:50%;
+  top:50%;
+  width: 90%;
+ transform: translate(-50%,-50%); 
+ text-align: center;
+}
+.class-overlay-type{
+font-size: 18px;
+text-transform: uppercase;
+color: #6195ff;
+text-transform: uppercase;
+display: block;
+position: relative;
+ opacity: 0; 
+ visibility: hidden;  
+transition: .6s;
+ transition-delay: 0; 
+top: 10px;
+}
+.class-overlay h3{
+   padding: 4px 0; 
+  font-size: 45px;
+  color: #fff;
+  position: relative;
+     opacity: 0;  
+   visibility: hidden;  
+   transition: .6s;  
+  transition-delay: .3s;
+  top: 10px;
+}
+.class-overlay a{
+  font-size: 20px;
+  color: rgb(195, 205, 214);
+  background-color: blue;
+  display: inline-block;
+     padding: 5% 5%; 
+   position: relative; 
+    opacity: 0; 
+   visibility: hidden;  
+   transition: .6s;  
+   transition-delay: .6s; 
+   top: 10px;
+   margin-top: 10px;
+} 
+.class-item:hover .class-overlay-type ,
+.class-item:hover .class-overlay h3 ,
+.class-item:hover .class-overlay a {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+}
+/* ////////////////////////////////////////////////// what we offer ///////////////////////////////////////////////// */
+
+.offer-page {
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+  position: relative;
+}
+.offer-header{
+  margin: auto;
+  text-align: center;
+}
+.offer-title {
+  font-size: 40px;
+  padding-top: 90px; 
+}
+
+ .offer-headerline{
+  margin: auto;
+  height: 3px;
+  width: 60px;
+  background-color: rgb(12, 78, 99);
+  margin-top: 10px;
+} 
+.offer-container{
+    width: 85%;
+    margin: auto;
+     margin-top: 70px;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%  , -50%  ); 
+}
+.offer-content {
+  overflow: auto;
+  margin-top: 15px;
+}
+ .offer-item{
+    height: 150px; 
+  width: 27%;
+  border: .5px solid gray;
+  float: left; 
+  border-radius: 10px;
+  background-color: rgb(223, 215, 215); 
+   padding: 15px  10px ; 
+   transition: .7s;  
+  position: relative;
+  overflow: auto;
+  margin-bottom: 30px ;
+}
+.offer-item-middle{
+  margin: 0 6.5%;
+}
+.offer-icon {
+  font-size: 30px; 
+ color: rgb(5, 5, 58);
+ transition: .7s;
+position: absolute;
+top: 35px;
+left: 15px;
+}
+.offer-item-title{
+ padding: 25px 0 15px  60px;
+  text-transform: capitalize;
+}
+.offer-item-detials{
+ padding: 0px 50px 0 60px; 
+ text-transform: capitalize;
+  letter-spacing: .5px; 
+}
+.offer-item:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right top, rgb(8, 37, 70),rgba(2, 0, 145, 0.582)); 
+  z-index: -2;    
+}
+.offer-item:hover::after{
+height: 100%;
+width: 100%;
+ transition: .7s; 
+} 
+ .offer-item:hover ,  .offer-item:hover .offer-icon  {
+  color: white; 
+  z-index: 3;    
+} 
+/* ////////////////////////////////////// why u choose us  //////////////////////////// */
+
+.about{
+  height: 100vh;
+  background-color: rgb(209, 209, 209);
+}
+.about-content{
+overflow: auto;
+}
+.about-item{
+  float: left;
+  width: 40%;
+   margin: 9%  0;
+  margin-left: 8%; 
+}
+.about-header{
+  font-size: 40px;
+  padding-bottom:10px;
+
+}
+.about-header-line{
+  height: 4px;
+  width: 50px;
+  background-color: #2b66db;
+  margin-bottom: 30px;
+}
+.about-paragrah{
+  font-size: 22px;
+  padding-bottom: 30px;
+}
+.about-text-step{
+  list-style: none;
+}
+.about-text-num {
+  padding-bottom: 15px;
+  font-size: 18px;
+
+}
+.about-text-num i {
+  background-color: rgb(49, 49, 223);
+  color: whitesmoke;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.about-pointer{
+  margin-left: 200px ;
+}
+.about-point{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #3a75ec;
+  margin-left: 3%;
+}
+.main-point{
+  background-color: rgb(7, 7, 226) ;
+ }
+  
+.about-point:hover{
+  background-color: rgb(7, 7, 226);
+}
+/* ///////////////////////////////////      ///////////////////////////////////////// */
+.numbers{
+  background-image: url(../images/young-fitness-man-studio.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 350px;
+}
+.numbers-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.7)
+}
+
+.numbers-content{
+  overflow: auto;
+  padding-top: 125px ;
+
+}
+
+.numbers-item{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.numbers-icon{
+  font-size: 30px;
+  color: orangered;
+  padding-bottom: 5px;
+}
+
+.numbers-title{
+  font-size: 35px;
+  color: #fff;
+}
+.numbers-text{
+  font-size: 25px;
+  color: #fff;
+}
+/* ////////////////////////////////////// pricing table /////////////////////////////////////// */
+
+.plans {
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+  position: relative;
+}
+.plans-header{
+  text-align: center;
+  padding-top: 40px; 
+  width: 55%;
+  margin: auto;
+}
+.plans-title {
+  font-size: 40px;
+}
+.plans-headertext {
+  font-size: 22px;
+  padding-top: 40px;
+}
+
+ .plans-headerline{
+  margin: auto;
+  height: 3px;
+  width: 60px;
+  background-color: rgb(12, 78, 99);
+} 
+.plans-container{
+    width: 90%;
+    margin-top: 50px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%  , -50% );  
+}
+.plans-content {
+  overflow: auto;
+  margin-top: 15px;
+}
+ .plans-item{
+  width: 25%;
+  border: .5px solid gray;
+  float: left; 
+  border-radius: 5px;
+  background-color: rgb(223, 215, 215); 
+  text-align: center;
+    padding: 30px 15px;  
+  position: relative;
+}
+.plans-middle{
+   margin: 0  8.5%; 
+}
+.plans-item-title{
+  font-size: 30px;
+  padding: 5px 0 10px 0;
+}
+.plans-item-price{
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(5, 5, 58);
+  margin: 10px auto;
+  border-radius: 50%;
+  padding: 15px 15px;
+  z-index: 3;
+}
+.plans-item-coin{
+  font-size: 45px;
+  padding: 8px 0 ;
+}
+.plans-item-period{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+ .plans-item-text{
+  font-size: 20px;
+  margin-left: 20px;
+  list-style-type: none;
+  font-family: none;
+  margin-top: 15px;
+} 
+.plans-item-spec{
+padding-top: 10px;
+}
+.plans-item-btn{
+  height: 50px;
+  width: 200px;
+  border: 1px solid gray;
+  margin-top: 30px;
+  font-size: 20px;
+cursor: pointer;
+transition: 1.5s;
+}
+.plans-item:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right top, rgb(8, 37, 70),rgba(2, 0, 145, 0.582)); 
+}
+.plans-item:hover::after{
+height: 100%;
+width: 100%;
+ transition: .7s; 
+ z-index: -2;
+} 
+.plans-item:hover{
+  color: rgb(243, 231, 231); 
+ z-index: 3;   
+} 
+.plans-item:hover .plans-item-btn {
+z-index: 3;
+background-image: linear-gradient(to right top, rgba(33, 30, 197, 0.582), rgb(9, 53, 102)); 
+color: rgb(226, 215, 215);
+  border-radius: 20px;
+  border: none;
+}
+.plans-item:hover .plans-item-price {
+  border-color:  whitesmoke;
+}
+/* //////////////////////////////////////////  dsgsddg ///////////////////////////////////////// */
+
+.info{
+   background-image: url(../images/young-fitness-man-studio.jpg); 
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: 350px;
+}
+.info-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info-content{
+  overflow: auto;
+  padding-top: 80px;
+  margin: auto;
+}
+
+.info-item{
+  height: 250px;
+  width: 50%;
+  float: left;
+}
+.info-item-header{
+  position: relative;
+  margin-top: 8%;
+  padding: 0 40% 0 37%;
+
+}
+.info-item-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 160px ;
+  margin-top: -10px;
+}
+.info-item-title{
+  font-size: 25px;
+  color: whitesmoke;
+  padding: 5px 0;
+}
+.info-item-job{
+  font-size: 16px;
+  color: #6195ff;
+}
+.info-item-paragrah{
+  font-size: 15px;
+  color: whitesmoke;
+   padding: 5%  20% 0 25%;    
+}
